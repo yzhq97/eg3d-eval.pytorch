@@ -308,6 +308,17 @@ def main(**kwargs):
             'avg_camera_radius': 2.7, # used only in the visualizer to specify camera orbit radius.
             'avg_camera_pivot': [0, 0, 0.2], # used only in the visualizer to control center of camera rotation.
         })
+    elif opts.cfg == 'shhq':
+        rendering_options.update({
+            'depth_resolution': 64,
+            'depth_resolution_importance': 64,
+            'ray_start': 0.1,
+            'ray_end': 2.6,
+            'box_warp': 1.6,
+            'white_back': True,
+            'avg_camera_radius': 1.7,
+            'avg_camera_pivot': [0, 0, 0],
+        })
     elif opts.cfg == 'afhq':
         rendering_options.update({
             'depth_resolution': 48,
