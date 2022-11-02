@@ -312,11 +312,11 @@ def main(**kwargs):
         rendering_options.update({
             'depth_resolution': 64,
             'depth_resolution_importance': 64,
-            'ray_start': 0.1,
-            'ray_end': 2.6,
-            'box_warp': 1.6,
+            'ray_start': 'auto',
+            'ray_end': 'auto',
+            'box_warp': 2,
             'white_back': True,
-            'avg_camera_radius': 1.7,
+            'avg_camera_radius': 2.2,
             'avg_camera_pivot': [0, 0, 0],
         })
     elif opts.cfg == 'afhq':
