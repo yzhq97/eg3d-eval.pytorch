@@ -314,9 +314,9 @@ def main(**kwargs):
             'depth_resolution_importance': 64,
             'ray_start': 'auto',
             'ray_end': 'auto',
-            'box_warp': 2,
+            'box_warp': 1,
             'white_back': True,
-            'avg_camera_radius': 2.2,
+            'avg_camera_radius': 2.7,
             'avg_camera_pivot': [0, 0, 0],
         })
     elif opts.cfg == 'afhq':
