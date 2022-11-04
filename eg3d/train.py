@@ -311,6 +311,17 @@ def main(**kwargs):
         })
     elif opts.cfg == 'shhq':
         rendering_options.update({
+            'depth_resolution': 64,
+            'depth_resolution_importance': 64,
+            'ray_start': 'auto',
+            'ray_end': 'auto',
+            'box_warp': 1,
+            'white_back': True,
+            'avg_camera_radius': 2.7,
+            'avg_camera_pivot': [0, 0, 0],
+        })
+    elif opts.cfg == 'shhq48':
+        rendering_options.update({
             'depth_resolution': 48,
             'depth_resolution_importance': 48,
             'ray_start': 'auto',
